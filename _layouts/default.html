@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <title>{% if page.title %} {{ page.title }} {% else %} {{ site.name }} {% endif %}</title>
-    <link rel="stylesheet" href="{{ site.url}}/normalize.min.css">
-    <link rel="stylesheet" href="{{ site.url }}/style.css">
+    <link rel="stylesheet" href="{{ site.baseurl}}/normalize.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
   </head>
   <body>
     <div class="wrapper" id="top">
 
       <header class="about">
-	<h2><a href="https://github.com/JanAhrens"><img height="32px" src="{{ site.url }}/assets/lambda.png"></a> about</h2>
+	<h2><a href="https://github.com/JanAhrens"><img height="32px" src="{{ site.baseurl }}/assets/lambda.png"></a> about</h2>
 	<p>
 	  Hi, I'm <a href="https://github.com/JanAhrens">Jan Ahrens</a>!
 	  In my blog you'll read about random tech stuff.
@@ -21,7 +21,7 @@
       </header>
 
       <article class="content">
-	<h1><a href="{{ site.url }}">/blog</a></h1>
+	<h1><a href="{{ site.baseurl }}">/blog</a></h1>
 	{{ content }}
       </article>
 
