@@ -1,0 +1,6 @@
+safe: true
+lsi: false
+pygments: true
+name: /blog
+paginate: 5
+exclude: ['Gemfile', 'Gemfile.lock']

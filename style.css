@@ -1,0 +1,43 @@
+/* Damn I did something wrong here. Once I remove this rule the about box will move lower */
+.about, .content { border: 1px solid white; }
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.about {
+    width: 25%;
+    float: right;
+}
+
+.content {
+    width: 66%;
+}
+
+.content h1 {
+    border-bottom: 1px solid grey;
+}
+
+.content h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.post-title {
+    text-align: center;
+}
+
+.published-at {
+    text-align: right;
+    display: block;
+    color: grey;
+}
+
+.content footer {
+    text-align: center;
+}
+
+.content footer a {
+    text-decoration: none;
+}
