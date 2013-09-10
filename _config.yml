@@ -4,3 +4,4 @@ pygments: true
 name: /blog
 paginate: 5
 exclude: ['Gemfile', 'Gemfile.lock']
+url: http://janahrens.github.io/blog
