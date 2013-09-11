@@ -1,18 +1,20 @@
-/* Damn I did something wrong here. Once I remove this rule the about box will move lower */
-.about, .content { border: 1px solid white; }
+body {
+		line-height: 1.6em;
+}
 
 .wrapper {
     width: 90%;
     margin: 0 auto;
 }
 
-.about {
+.sidebar {
     width: 25%;
     float: right;
 }
 
 .content {
     width: 66%;
+		float: left;
 }
 
 .content h1 {
@@ -22,6 +24,11 @@
 .content h1 a {
     text-decoration: none;
     color: black;
+}
+
+.slogan {
+		font-family: monospace;
+		font-size: 3em;
 }
 
 .post-title {
