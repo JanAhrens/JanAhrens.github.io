@@ -28,8 +28,8 @@ You have to connect to the virtual machine and use the yesod command to scaffold
 
     $ vagrant ssh
     # cd /vagrant
-    # yesod init
-    # yesod devel
+    # yesod init --bare
+    # cabal install && yesod devel
 
 After the Yesod development server is up and running, you can use your default web browser and point it to
 [`http://localhost:3000`](http://localhost:3000/). Voilà!
