@@ -2,7 +2,8 @@
 title: cd /blog
 layout: post
 date: 2013-09-10
+excerpt: This blog has now a layout
 ---
 
 After some time without layout I choose to give this blog a some style with the help of [Jekyll](http://jekyllrb.com/).
-You can still view and fork my blog in it's [GitHub repository](https://github.com/JanAhrens/blog).
+You can still view and fork my blog in it's [GitHub repository](https://github.com/JanAhrens/JanAhrens.github.io).
