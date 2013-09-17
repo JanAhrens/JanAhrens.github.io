@@ -48,3 +48,24 @@ body {
 .content footer a {
     text-decoration: none;
 }
+
+pre {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 10px;
+  overflow-x: auto;
+  background-color: #282828;
+}
+
+pre code {
+  color: #D0D0D0;
+  background-color: inherit;
+  font-family: monospace;
+  font-size: 1.2em;
+}
+
+code {
+  color: #555;
+  font-family: monospace;
+  font-size: 1.2em;
+}
