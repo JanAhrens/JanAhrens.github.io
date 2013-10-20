@@ -78,11 +78,11 @@ The rest of the Kata was straight forward. My result looks like this:
 (ert-deftest divisible-by-three-and-five ()
   "numbers divisible by five and three should be replaced with FizzBuzz"
   (should (equal "FizzBuzz" (translate-fizz-buzz 15))))
-    ```
+```
 
-If I got you interested and you want to try this, please remember that
-you have to evaluate every function again as soon as you make changes
-(at least when you use the `*scratch*` buffer).
+If I got you interested and you also want to experiment with ELT, keep
+in mind that you have to evaluate every function again as soon as you
+make changes (at least when you use the `*scratch*` buffer).
 
 This small exercises got me hooked to spent more time learning about
 Emacs and Lisp. I really like the concept that you have a powerful
