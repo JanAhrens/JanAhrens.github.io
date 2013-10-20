@@ -1,5 +1,5 @@
 ---
-title: Fizz Buzz in Emacs
+title: FizzBuzz in Emacs
 layout: post
 date: 2013-10-20
 ---
