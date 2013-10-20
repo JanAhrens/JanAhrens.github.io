@@ -4,3 +4,11 @@ pygments: true
 name: /blog
 paginate: 5
 exclude: ['Gemfile', 'Gemfile.lock']
+markdown: redcarpet
+redcarpet:
+  extensions:
+    - hard_wrap
+    - no_intra_emphasis
+    - autolink
+    - strikethrough
+    - fenced_code_blocks

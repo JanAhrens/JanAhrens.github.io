@@ -33,7 +33,7 @@ which I choose for my quest to implement FizzBuzz.
 My first task was to write a failing test and learn how to execute it,
 so I came up with this beautiful crafted test-case.
 
-```emacs
+```
 (ert-deftest the-truth ()
   "the truth should be working"
   (should (equal t 0)))
@@ -52,10 +52,10 @@ test-case (after the closing parenthesis) and type `C-x C-e`. A second
 
 The rest of the Kata was straight forward. My result looks like this:
 
-```emacs
-(defun translate-fizz-buzz (
+```
+(defun translate-fizz-buzz ()
   "translate a number into it's fizz-buzz value"
-  if (equal 0 (mod x 15))
+  (if (equal 0 (mod x 15))
       "FizzBuzz"
     (if (equal 0 (mod x 3))
         "Fizz"
