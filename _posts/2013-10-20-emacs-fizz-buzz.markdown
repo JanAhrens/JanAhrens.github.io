@@ -33,11 +33,11 @@ which I choose for my quest to implement FizzBuzz.
 My first task was to write a failing test and learn how to execute it,
 so I came up with this beautiful crafted test-case.
 
-    ```emacs
-    (ert-deftest the-truth ()
-      "the truth should be working"
-      (should (equal t 0)))
-    ```
+```emacs
+(ert-deftest the-truth ()
+  "the truth should be working"
+  (should (equal t 0)))
+```
 
 Having only read the necessary parts of the documentation, I attempted
 to run the test by executing the `ert` command with `M-x ert RET`. The
@@ -52,32 +52,32 @@ test-case (after the closing parenthesis) and type `C-x C-e`. A second
 
 The rest of the Kata was straight forward. My result looks like this:
 
-    ```emacs
-    (defun translate-fizz-buzz (x)
-      "translate a number into it's fizz-buzz value"
-      (if (equal 0 (mod x 15))
-          "FizzBuzz"
-        (if (equal 0 (mod x 3))
-            "Fizz"
-          (if (equal 0 (mod x 5))
-              "Buzz"
-            x))))
+```emacs
+(defun translate-fizz-buzz (
+  "translate a number into it's fizz-buzz value"
+  if (equal 0 (mod x 15))
+      "FizzBuzz"
+    (if (equal 0 (mod x 3))
+        "Fizz"
+      (if (equal 0 (mod x 5))
+          "Buzz"
+        x))))
 
-    (ert-deftest normal-number ()
-      "normal numbers should not be translated"
-      (should (equal 2 (translate-fizz-buzz 2))))
+(ert-deftest normal-number ()
+  "normal numbers should not be translated"
+  (should (equal 2 (translate-fizz-buzz 2))))
 
-    (ert-deftest divisible-by-three ()
-      "numbers divisible by three should be replaced with Fizz"
-      (should (equal "Fizz" (translate-fizz-buzz 3))))
+(ert-deftest divisible-by-three ()
+  "numbers divisible by three should be replaced with Fizz"
+  (should (equal "Fizz" (translate-fizz-buzz 3))))
 
-    (ert-deftest divisible-by-five ()
-      "numbers divisible by five should be replaced with Buzz"
-      (should (equal "Buzz" (translate-fizz-buzz 5))))
+(ert-deftest divisible-by-five ()
+  "numbers divisible by five should be replaced with Buzz"
+  (should (equal "Buzz" (translate-fizz-buzz 5))))
 
-    (ert-deftest divisible-by-three-and-five ()
-      "numbers divisible by five and three should be replaced with FizzBuzz"
-      (should (equal "FizzBuzz" (translate-fizz-buzz 15))))
+(ert-deftest divisible-by-three-and-five ()
+  "numbers divisible by five and three should be replaced with FizzBuzz"
+  (should (equal "FizzBuzz" (translate-fizz-buzz 15))))
     ```
 
 If I got you interested and you want to try this, please remember that
