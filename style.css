@@ -54,11 +54,11 @@ pre {
   margin-right: 5%;
   padding: 10px;
   overflow-x: auto;
-  background-color: #282828;
+  background-color: #2a2a2a;
 }
 
 pre code {
-  color: #D0D0D0;
+  color: #dcdccc;
   background-color: inherit;
   font-family: monospace;
   font-size: 1.2em;
