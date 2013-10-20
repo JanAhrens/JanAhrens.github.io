@@ -7,7 +7,6 @@ exclude: ['Gemfile', 'Gemfile.lock']
 markdown: redcarpet
 redcarpet:
   extensions:
-    - hard_wrap
     - no_intra_emphasis
     - autolink
     - strikethrough
