@@ -34,7 +34,7 @@ so I came up with this beautiful crafted test-case.
 ```cl
 (ert-deftest the-truth ()
   "the truth should be working"
-  (should (equal t 0)))
+  (should (equal t nil)))
 ```
 
 Since I'm a lazy person, I tried only to read the
