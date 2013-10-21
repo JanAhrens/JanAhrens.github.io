@@ -39,16 +39,18 @@ so I came up with this beautiful crafted test-case.
   (should (equal t 0)))
 ```
 
-Having only read the necessary parts of the documentation, I attempted
-to run the test by executing the `ert` command with `M-x ert RET`. The
-command was fitting, but no test got executed. I received a prompt
-report that there were zero passed and zero failed tests.
+Since I'm a lazy person, I tried only to read the necessary parts of
+the ERT documentation. My first attempt to run the test was executing
+the `ert` command with `M-x ert RET`. The command was fitting, but I
+received a prompt report that there were zero passed and zero failed
+tests.
 
 After a little more digging I found out that I first had to evaluate
 the test-case.  Typing the text into the `*scratch*` buffer doesn't
-tell Emacs to evaluate the expression.  I had to go to the end of the
-test-case (after the closing parenthesis) and type `C-x C-e`. A second
-`M-x ert RET` gave me the familiar red "F" output.
+tell Emacs to evaluate the expression and ERT will only run the
+globally defined test-cases.  I had to go to the end of the test-case
+(after the closing parenthesis) and type `C-x C-e`. A second `M-x ert
+RET` gave me the familiar red "F" output.
 
 The rest of the Kata was straight forward. My result looks like this:
 
