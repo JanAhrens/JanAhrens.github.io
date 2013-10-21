@@ -1,52 +1,52 @@
 body {
-		line-height: 1.6em;
+  line-height: 1.6em;
 }
 
 .wrapper {
-    width: 90%;
-    margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .sidebar {
-    width: 25%;
-    float: right;
+  width: 25%;
+  float: right;
 }
 
 .content {
-    width: 66%;
-		float: left;
+  width: 66%;
+  float: left;
 }
 
 .content h1 {
-    border-bottom: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
 
 .content h1 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .slogan {
-		font-family: monospace;
-		font-size: 3em;
+  font-family: monospace;
+  font-size: 3em;
 }
 
 .post-title {
-    text-align: center;
+  text-align: center;
 }
 
 .published-at {
-    text-align: right;
-    display: block;
-    color: grey;
+  text-align: right;
+  display: block;
+  color: grey;
 }
 
 .content footer {
-    text-align: center;
+  text-align: center;
 }
 
 .content footer a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 pre {
@@ -68,4 +68,10 @@ code {
   color: #555;
   font-family: monospace;
   font-size: 1.2em;
+}
+
+@media (max-width: 580px) {
+  .sidebar { float: none; width: 100%; }
+  .content { width: 100%; }
+  pre { margin-left: 0; margin-right: 0; }
 }
