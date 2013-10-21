@@ -13,8 +13,6 @@ gain the ability to bend the editor to my needs. I choose the
 [FizzBuzz Kata](http://codingdojo.org/cgi-bin/wiki.pl?KataFizzBuzz) as
 a starting point and want to share what I learned along the way.
 
-
-
 Emacs is not only an editor, it's in fact a powerful Lisp
 interpreter.  Most of the built-in text editing functionality of Emacs
 is written in Emacs Lisp.
@@ -39,11 +37,12 @@ so I came up with this beautiful crafted test-case.
   (should (equal t 0)))
 ```
 
-Since I'm a lazy person, I tried only to read the necessary parts of
-the ERT documentation. My first attempt to run the test was executing
-the `ert` command with `M-x ert RET`. The command was fitting, but I
-received a prompt report that there were zero passed and zero failed
-tests.
+Since I'm a lazy person, I tried only to read the
+[necessary parts](http://www.gnu.org/software/emacs/manual/html_node/ert/Running-Tests-Interactively.html#Running-Tests-Interactively)
+of the ERT documentation. My first attempt to run the test was
+executing the `ert` command with `M-x ert RET`. The command was
+fitting, but I received a prompt report that there were zero passed
+and zero failed tests.
 
 After a little more digging I found out that I first had to evaluate
 the test-case.  Typing the text into the `*scratch*` buffer doesn't
