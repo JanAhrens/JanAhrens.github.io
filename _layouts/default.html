@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="/normalize.min.css">
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/freya.css">
+    <meta property="og:title" content="{% if page.title %} {{ page.title }} {% else %} {{ site.name }} {% endif %}" />
+    <meta property="og:url" content="http://blog.jan-ahrens.eu" />
+    <meta property="og:image" content="http://blog.jan-ahrens.eu/assets/lambda.png" />
   </head>
   <body>
     <div class="wrapper" id="top">
@@ -23,10 +26,8 @@
           <a href="https://github.com/JanAhrens"><img height="32px" src="/assets/lambda.png"></a> about</h2>
           <p>
             Hi, I'm <a href="https://github.com/JanAhrens">Jan Ahrens</a>!
-            In this blog you can read about my opinions on various technical topics.
-          </p>
-          <p>
-            My current focus is on <mark>Haskell</mark>, <mark>Ruby</mark> and <mark>the web</mark>.
+            In my blog you can read about my thoughts on various technical topics.
+            My opinions are my own and don't necessarily reflect those of my employers.
           </p>
         </header>
       </aside>
