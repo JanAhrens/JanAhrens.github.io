@@ -1,54 +1,3 @@
-body {
-  line-height: 1.6em;
-}
-
-.wrapper {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.sidebar {
-  width: 25%;
-  float: right;
-}
-
-.content {
-  width: 66%;
-  float: left;
-}
-
-.content h1 {
-  border-bottom: 1px solid grey;
-}
-
-.content h1 a {
-  text-decoration: none;
-  color: black;
-}
-
-.slogan {
-  font-family: monospace;
-  font-size: 3em;
-}
-
-.post-title {
-  text-align: center;
-}
-
-.published-at {
-  text-align: right;
-  display: block;
-  color: grey;
-}
-
-.content footer {
-  text-align: center;
-}
-
-.content footer a {
-  text-decoration: none;
-}
-
 pre {
   margin-left: 5%;
   margin-right: 5%;
@@ -59,19 +8,25 @@ pre {
 
 pre code {
   color: #dcdccc;
-  background-color: inherit;
   font-family: monospace;
-  font-size: 1.2em;
 }
 
 code {
   color: #555;
   font-family: monospace;
-  font-size: 1.2em;
 }
 
-@media (max-width: 580px) {
-  .sidebar { float: none; width: 100%; }
-  .content { width: 100%; }
-  pre { margin-left: 0; margin-right: 0; }
+.blog-main {
+  font-size: 18px;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.about {
+  border-radius: 3px;
+  background-color: #F5F5F5;
+  padding: 15px;
 }
