@@ -44,6 +44,16 @@ body {
   font-size: 3em;
 }
 
+.head a {
+  color: black;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.head a:hover {
+  text-decoration: none;
+}
+
 ul.posts {
   padding-left: 0;
 }
