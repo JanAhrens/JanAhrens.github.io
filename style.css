@@ -26,6 +26,8 @@ body {
 }
 
 .about {
+  margin-top: 110px;
+  margin-bottom: 110px;
   border-radius: 3px;
   background-color: #F5F5F5;
   padding: 15px;
@@ -39,4 +41,37 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
   font-family: monospace;
+  font-size: 3em;
+}
+
+ul.posts {
+  padding-left: 0;
+}
+
+.posts li {
+  list-style-type: none;
+}
+
+.post-head {
+  margin-bottom: 20px;
+}
+
+.post-head a {
+  color: black;
+}
+
+.post-head a:hover {
+  text-decoration: none;
+}
+
+footer {
+  border-top: 3px dotted #f5f5f5;
+  font-size: 18px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+
+footer a:hover {
+  text-decoration: none;
 }

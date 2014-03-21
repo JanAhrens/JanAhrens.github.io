@@ -4,11 +4,11 @@ layout: default
 
 {% capture current_year %}{{ site.time | date: "%Y" }}{% endcapture %}
 
-<ul>
+<ul class="posts">
   {% for post in paginator.posts %}
   <li>
     {% capture year %}{{ post.date | date: "%Y" }}{% endcapture %}
-    {{ post.date | date: "%Y-%m-%d" }}:  <a href="{{ post.url}}">{{ post.title }}{% if year != current_year %} ({{ year }}) {% endif %}</a>
+    <h2 class="post-head"><a href="{{ post.url}}">{{ post.title }}{% if year != current_year %} ({{ year }}) {% endif %}</a></h2>
     <p> {{ post.excerpt }} <a href="{{ post.url }}">read more</a></p>
   </li>
 {% endfor %}
