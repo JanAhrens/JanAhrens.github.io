@@ -1,3 +1,8 @@
+body {
+  font-familiy: 'Open Sans', helvetica, arial, sans-serif;
+  color: #555555;
+}
+
 pre {
   margin-left: 5%;
   margin-right: 5%;
@@ -26,26 +31,25 @@ body {
 }
 
 .about {
-  margin-top: 110px;
-  margin-bottom: 110px;
   border-radius: 3px;
   background-color: #F5F5F5;
   padding: 15px;
 }
 
 .about-box {
-  padding-right: 0;
+  display: flex;
+  align-items: center;
 }
 
 .head {
   margin-top: 30px;
   margin-bottom: 30px;
   font-family: monospace;
-  font-size: 3em;
+  font-size: 40px;
 }
 
 .head a {
-  color: black;
+  color: #CCCCCC;
   font-weight: bold;
   letter-spacing: 2px;
 }
@@ -62,12 +66,16 @@ ul.posts {
   list-style-type: none;
 }
 
+.posts li:nth-of-type(n+2) {
+  border-top: 2px solid #CCCCCC;
+}
+
 .post-head {
   margin-bottom: 20px;
 }
 
 .post-head a {
-  color: black;
+  color: #555555;
 }
 
 .post-head a:hover {
@@ -75,7 +83,7 @@ ul.posts {
 }
 
 footer {
-  border-top: 3px dotted #f5f5f5;
+  border-top: 3px dotted #CCCCCC;
   font-size: 18px;
   margin-bottom: 15px;
   margin-top: 15px;
