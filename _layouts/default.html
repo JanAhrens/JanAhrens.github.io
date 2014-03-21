@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/style.css">
 
     <meta property="og:title" content="{% if page.title %} {{ page.title }} {% else %} {{ site.name }} {% endif %}" />
-    <meta property="og:url" content="http://blog.jan-ahrens.eu" />
+    <meta property="og:url" content="{{ site.url }}" />
     <meta property="og:image" content="http://blog.jan-ahrens.eu/assets/lambda.png" />
 {% if page.excerpt %}
     <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% endif %}" />
