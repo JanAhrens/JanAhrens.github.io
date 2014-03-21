@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %} {{ page.title }} {% else %} {{ site.name }} {% endif %}</title>
+
     <link rel="stylesheet" href="/bootstrap.min.css">
     <link rel="stylesheet" href="/freya.css">
     <link rel="stylesheet" href="/style.css">
+
     <meta property="og:title" content="{% if page.title %} {{ page.title }} {% else %} {{ site.name }} {% endif %}" />
     <meta property="og:url" content="http://blog.jan-ahrens.eu" />
     <meta property="og:image" content="http://blog.jan-ahrens.eu/assets/lambda.png" />
@@ -18,25 +20,29 @@
 
   <body>
     <div class="container" id="top">
-      <h1><a href="/">/blog</a></h1>
+      <h1 class="head"><a href="/">/blog</a></h1>
       <div class="row">
         <div class="col-sm-8 blog-main">
           {{ content }}
         </div>
-        <div class="col-sm-3 col-sm-offset-1">
+        <div class="col-sm-3 col-sm-offset-1 about-box">
           <div class="about">
             <h4>
               <a href="https://github.com/JanAhrens"><img height="32px" src="/assets/lambda.png"></a> about
             </h4>
             <p>
-              Hi, I'm <a href="https://github.com/JanAhrens">Jan Ahrens</a>!
+              Hi, I'm <a href="https://github.com/JanAhrens">Jan Ahrens</a>.
               In this blog you can read about my thoughts on various technical topics.
             </p>
             <p>
-              The fingerprint of my PGP key is <a href="http://pgp.mit.edu/pks/lookup?op=get&search=0xB911E6A22B4F3B5F">3762 1152 E099 AB27 04E8  3FD1 B911 E6A2 2B4F 3B5F</a>.
+              As you might have already guessed: My opinions are my own and don't necessarily represent those of my employer.
             </p>
             <p>
-              As you might have already guessed: My opinions are my own and don't necessarily represent those of my employer.
+              If you want to contact me you can use my <a href="http://pgp.mit.edu/pks/lookup?op=get&search=0xB911E6A22B4F3B5F">PGP key</a>.
+              Its fingerprint is 3762 1152 E099 AB27 04E8  3FD1 B911 E6A2 2B4F 3B5F.
+            </p>
+            <p>
+              This blog is built with <a target="_blank" href="http://jekyllrb.com/">Jekyll</a>. You can find <a href="https://github.com/JanAhrens/JanAhrens.github.io">its source code</a> on GitHub.
             </p>
           </div>
         </div>
