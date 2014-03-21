@@ -2,6 +2,7 @@
 title: FizzBuzz in Emacs
 layout: post
 date: 2013-10-20
+excerpt: I've been playing with GNU Emacs and implemented the FizzBuzz Kata. In this post you can read about my approach.
 ---
 
 I've been playing around with
@@ -88,8 +89,10 @@ make changes (at least when you use the `*scratch*` buffer).
 This small exercises got me hooked to spent more time learning about
 Emacs and Lisp. I really like the concept that you have a powerful
 programming environment inside my editor and the possibility to bend
-the editor to my needs. The next weeks will show if the excitement
-will last. If you're interested in my Emacs configuration (which is
+the editor to my needs. The next weeks will show if I become a regular
+Emacs user. <strike>If you're interested in my Emacs configuration (which is
 not really advanced at the time of writing this post), have a look at
 my
-[dotfiles repository](https://github.com/JanAhrens/dotfiles/tree/master/.emacs.d/).
+[dotfiles repository](https://github.com/JanAhrens/dotfiles/tree/master/.emacs.d/)</strike>.
+
+**Update**: I use Emacs nowadays regularly. My configuration is based on [Emacs Prelude](https://github.com/bbatsov/prelude). The interesting parts are in the [personal folder of my fork](https://github.com/JanAhrens/prelude/tree/master/personal).
