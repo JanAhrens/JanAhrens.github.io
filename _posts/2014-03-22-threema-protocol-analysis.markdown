@@ -2,7 +2,7 @@
 title: Threema protocol analysis
 layout: post
 date: 2014-03-22
-excerpt: I did an analysis of the protocol used by the mobile messaging application Threema. In this post you'll read about my results.
+excerpt: I analyzed the custom protocol used by the mobile messaging application Threema and wrote a paper to summarize my results.
 ---
 
 I spent the last weeks analyzing the protocol used by the mobile messaging application [Threema](https://threema.ch/en/).
