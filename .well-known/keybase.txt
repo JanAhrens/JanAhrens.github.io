@@ -1,0 +1,70 @@
+==================================================================
+https://keybase.io/janahrens
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://blog.jan-ahrens.eu
+  * I am janahrens (https://keybase.io/janahrens) on keybase.
+  * I have a public key with fingerprint 3762 1152 E099 AB27 04E8  3FD1 B911 E6A2 2B4F 3B5F
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "37621152e099ab2704e83fd1b911e6a22b4f3b5f",
+            "host": "keybase.io",
+            "key_id": "b911e6a22b4f3b5f",
+            "uid": "3038dbd9fdbad384bc225e30aaa83700",
+            "username": "janahrens"
+        },
+        "service": {
+            "hostname": "blog.jan-ahrens.eu",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1396653859,
+    "expire_in": 157680000,
+    "prev": "648a1e1669674e10a49327e8dca577138261a0e2b009fa3b852d50a26b367155",
+    "seqno": 2,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owGbwMvMwMS4mmPLci7hR4qMpw/8TGIItrfPqlZKyk+pVLKqVspOBVNpmXnpqUUF
+RZl5JUpWSsbmZkaGhqZGqQaWlolJRuYGJqkWxmkphkmWhoapZolGRkkmacZJpmlK
+OkoZ+cUgHUBjkhKLU/Uy84FiQE58ZgpQFIv6UrCEsYGxRUpSimVaSlJiirGFSVKy
+kZFpqrFBYmKihbG5gQFIYXFqUV5ibipQdVZiXmJGUWpesVKtjhJQuCwzORXkaJDd
+UCVJOfnpekB1uhCFeqmlQCMKivJL8pPzc4DyGSUlBVYg7SWVBSD15alJ8VCT4pMy
+81KA3gdqKEstKs7Mz1OyMgSqTC7JBBltaGxpZmZqbGFqqaOUWlGQWZQanwlSYWpu
+ZmEABCBrUsuARpqZWCQaphqamVmamZukGhokmlgaG5mnWqQkJ5qamxsaWxiZGSYa
+pBolGRhYpiUaJ1mYGqWYGiQamSUZm5kbmpoqgfxWmJevZGUEdGZiOtDI4sz0vMSS
+0qJUpVquTiYZFgZGJgY2ViZQDDJwcQrA4nWfIf//uNdburMnf0uPcbiy+5yyzyxb
+0TeSL5vTimY6TXIoT/RetKPdaaPp861v4x1D3NX+3jJO+Ruzb+H+oz9D3rw915Fb
+aCThMKdldpHyvH6T/5PLypyC7gW/3Ryr8XuN9y+5b+k/M9kSTH5FnxPYdpKt/CeD
+10ldh9LTyrulO3v9pcPNOEsPGfBLrUxk+fC9pqOyvidlYte21SKeO8MsyjhuhX6Y
+U/3BmKvm3n+WvynWbmrSZ/8Z8WnUn/7lc5f9+YMPzg4/WBJSYpJFDlkeZ816J2Vw
+V3lBupW7rv3Dbb1F5wRK5908NfW3FevrOCuX0xNk9/HF6xedvH540Yyte06F3hE1
+6TM16bnJ8OOO4dFXwh9NNNkriswV5rvJzHgtl/+6ImxtYljjhqOO86OOPv/9RYYh
+McL+x80vL284dOptU6460ZFzXOaxbHHiylUt+9a1H5Pf/ELhvlhDfMIf7aKt8g0X
+/kQ+iJxXcqZT8vjH4nUKD6dM9hWKYHm5uarTRkz76ZWS19zl8/QZCxfNl846L+b2
+4uZjO5VVhaki/5vf2M1T/ibZ5qfZ2Hh09sSVF+7Fyr+9/2GG5NySpy9nrTM7+Ebj
+xiHF8CrxA68fK72ouBqVq3R16sN2hsSm9GnLN/16JXlKN734xduyrbXMPYYLmPta
+ThY/mjg9sMBobn32mp8nubWMfjg3L83d829jwPOaK0uTp3uzFnrEVvQAAA==
+=H9Dv
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/janahrens
+
+==================================================================
+
