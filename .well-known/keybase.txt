@@ -26,10 +26,10 @@ To claim this, I am signing this object:
         "type": "web_service_binding",
         "version": 1
     },
-    "ctime": 1396653859,
+    "ctime": 1396695755,
     "expire_in": 157680000,
-    "prev": "648a1e1669674e10a49327e8dca577138261a0e2b009fa3b852d50a26b367155",
-    "seqno": 2,
+    "prev": "7462de7128d210f7cc97af2b62bdda7e9258ba6041e27491f9d12e8b731599df",
+    "seqno": 3,
     "tag": "signature"
 }
 
@@ -38,27 +38,27 @@ with the aforementioned key, yielding the PGP signature:
 -----BEGIN PGP MESSAGE-----
 Version: GnuPG v1
 
-owGbwMvMwMS4mmPLci7hR4qMpw/8TGIItrfPqlZKyk+pVLKqVspOBVNpmXnpqUUF
-RZl5JUpWSsbmZkaGhqZGqQaWlolJRuYGJqkWxmkphkmWhoapZolGRkkmacZJpmlK
-OkoZ+cUgHUBjkhKLU/Uy84FiQE58ZgpQFIv6UrCEsYGxRUpSimVaSlJiirGFSVKy
-kZFpqrFBYmKihbG5gQFIYXFqUV5ibipQdVZiXmJGUWpesVKtjhJQuCwzORXkaJDd
-UCVJOfnpekB1uhCFeqmlQCMKivJL8pPzc4DyGSUlBVYg7SWVBSD15alJ8VCT4pMy
-81KA3gdqKEstKs7Mz1OyMgSqTC7JBBltaGxpZmZqbGFqqaOUWlGQWZQanwlSYWpu
-ZmEABCBrUsuARpqZWCQaphqamVmamZukGhokmlgaG5mnWqQkJ5qamxsaWxiZGSYa
-pBolGRhYpiUaJ1mYGqWYGiQamSUZm5kbmpoqgfxWmJevZGUEdGZiOtDI4sz0vMSS
-0qJUpVquTiYZFgZGJgY2ViZQDDJwcQrA4nWfIf//uNdburMnf0uPcbiy+5yyzyxb
-0TeSL5vTimY6TXIoT/RetKPdaaPp861v4x1D3NX+3jJO+Ruzb+H+oz9D3rw915Fb
-aCThMKdldpHyvH6T/5PLypyC7gW/3Ryr8XuN9y+5b+k/M9kSTH5FnxPYdpKt/CeD
-10ldh9LTyrulO3v9pcPNOEsPGfBLrUxk+fC9pqOyvidlYte21SKeO8MsyjhuhX6Y
-U/3BmKvm3n+WvynWbmrSZ/8Z8WnUn/7lc5f9+YMPzg4/WBJSYpJFDlkeZ816J2Vw
-V3lBupW7rv3Dbb1F5wRK5908NfW3FevrOCuX0xNk9/HF6xedvH540Yyte06F3hE1
-6TM16bnJ8OOO4dFXwh9NNNkriswV5rvJzHgtl/+6ImxtYljjhqOO86OOPv/9RYYh
-McL+x80vL284dOptU6460ZFzXOaxbHHiylUt+9a1H5Pf/ELhvlhDfMIf7aKt8g0X
-/kQ+iJxXcqZT8vjH4nUKD6dM9hWKYHm5uarTRkz76ZWS19zl8/QZCxfNl846L+b2
-4uZjO5VVhaki/5vf2M1T/ibZ5qfZ2Hh09sSVF+7Fyr+9/2GG5NySpy9nrTM7+Ebj
-xiHF8CrxA68fK72ouBqVq3R16sN2hsSm9GnLN/16JXlKN734xduyrbXMPYYLmPta
-ThY/mjg9sMBobn32mp8nubWMfjg3L83d829jwPOaK0uTp3uzFnrEVvQAAA==
-=H9Dv
+owGbwMvMwMS4mmPLci7hR4qMpw/8TGIItn90s1opKT+lUsmqWik7FUylZealpxYV
+FGXmlShZKRmbmxkZGpoapRpYWiYmGZkbmKRaGKelGCZZGhqmmiUaGSWZpBknmaYp
+6Shl5BeDdACNSUosTtXLzAeKATnxmSlAUSzqS8ESxgbGFilJKZZpKUmJKcYWJknJ
+RkamqcYGiYmJFsbmBgYghcWpRXmJualA1VmJeYkZRal5xUq1OkpA4bLM5FSQo0F2
+Q5Uk5eSn6wHV6UIU6qWWAo0oKMovyU/OzwHKZ5SUFFiBtJdUFoDUl6cmxUNNik/K
+zEsBeh+ooSy1qDgzP0/JyhCoMrkkE2S0obGlmZmlqbmpqY5SakVBZlFqfCZIham5
+mYUBEICsSS0DGmluYmaUkmpuaGSRYmRokGaenGxpnphmlGRmlJSSkmieamlkapGU
+aGZgYphqZG5iaZhmmWJolGqRZG5saGppmQIKnOLUwrx8JStjoDMT04FGFmem5yWW
+lBalKtVydTLJsDAwMjGwsTKBYpCBi1MAFq+TRQUY1qTamgZxntx+SVhUlOvyzptW
++6frqy9awDI38e4SjeBTRavvbt3x8H986e1pbx0sAh3PXA7u7/VeeeTbate6a1/3
+77gbcC/eOPeKxyoFHct73JZNWatWRIr41IXunF6WtOSzy5I5xkklcisaPl3MPOa1
+0ERu0o2wt/+33eZ2SdOx2DB5xt29PUFn5S6YL94wycS7nX9mguGD2taQl+Kh2xIf
+xjedf3nqZ1TTh8o1vk7TX3Mvc3Ca8ujKnAc/4lI4jK9//tJ5/H6TB5/CgtDHjx5u
+chQ4/Kn3xhnP6A/Sx7U6sxiEpq4sX3DjhYW3gH5cuObh6IaLEce63BsuNJTqLely
+bYv7fUv+5hV9zX0q+wW3SzWEmd1JPJBt/y1JXmwtt1nfouWHfix3nbj7vmiixdwa
+xth/dfyP9zsYXt+bxnGu9bPKwj2lnfFrpU/ssxZwzjPc5vDq8+cJAhOvzjW66r7o
+uNurqLNCa3drWB8tSfvC2jA1c7bgfm6Vze2bLVtlWTJPXK/h/tmsacua3/yBaQFf
+Zuwk7mmOAsWeRRwhmj/neZ7vuF0bwPf7+VTv6pvuEgzZl0oPpeczSiWnPhV5y8vK
+9eLcueTnDJpd/1qVtzFsO6Fx13FxJE+PSr7g1mvFd6syrmn+OhJ5c9kyiWlnj78W
+mHVXvEKS4dyWyHe3eRUE9fh3fmd6+/hu5z0x+Y0hD9PkFUq+HzOckrl7NQA=
+=QO2o
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
@@ -67,4 +67,3 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/janahrens
 
 ==================================================================
-
