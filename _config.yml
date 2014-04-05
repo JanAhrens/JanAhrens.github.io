@@ -5,6 +5,7 @@ name: ~/blog
 url: http://blog.jan-ahrens.eu
 paginate: 5
 exclude: ['Gemfile', 'Gemfile.lock']
+include: ['.well-known']
 markdown: redcarpet
 redcarpet:
   extensions:
