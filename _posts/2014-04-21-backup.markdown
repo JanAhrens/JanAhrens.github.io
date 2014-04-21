@@ -1,0 +1,112 @@
+---
+title: "Backups with Tarsnap"
+layout: post
+date: 2014-04-21
+---
+
+I recently switched from doing local backups to online backups with
+[Tarsnap](https://www.tarsnap.com/). In this post I want to share
+what I think is great about Tarsnap and how I configured it.
+
+## Motivation
+
+My main reason to change the way that I'm doing backups is that I
+couldn't get myself to regularly attach external storage and
+execute [Back In Time](http://backintime.le-web.org/). The starting
+point of my search was that I wanted a simple, secure and cheap way to
+do online backups.
+
+Before coming to Tarsnap I experimented with
+[SpiderOak](https://spideroak.com/) and
+[Duplicity](http://duplicity.nongnu.org/). SpiderOak was too expensive
+and the Linux GUI felt unmaintained. Duplicity made a good
+impression but creating the backups took a long time and it
+isn't able to spot renamed files.
+
+## Meet Tarsnap
+
+Tarsnap is not cheap (0.25 USD/GB-month) but it includes a
+[de-duplication mechanism](https://www.tarsnap.com/efficiency.html)
+that considers the backup as a stream of data rather than a list of
+files.  Using this method it can spot duplicate blocks and safe
+storage and time. The other features of Tarsnap are summarized in the
+[design principles](https://www.tarsnap.com/design.html)
+documentation.
+
+Tarsnap is following the
+[Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) and
+consists of &laquo;programs that do one thing and do it well&raquo;:
+Before Tarsnap can create backups, a key has to be generated using
+`tarsnap-keygen`. This key includes the tarsnap.com account that will
+be charged with the storage and data-transfer costs, the key to
+encrypt the data and a set of permissions. A newly generated key
+includes the read, write and delete permission. Later on
+`tarsnap-keymgmt` can be used to generate subkeys that for example
+can only create new backups but don't delete or read existing ones.
+
+`tarsnap` is the main program and it's purpose is to
+&laquo;[manipulate remote encrypted backups](https://www.tarsnap.com/man-tarsnap.1.html)&raquo;.
+Like the original
+[`tar`](https://en.wikipedia.org/wiki/Tar_%28computing%29) it can be
+used to create new archives, list the contents of existing ones and
+unpack them. It can also delete archives.
+
+## Rotation schema
+
+The first downside that I had to learn about Tarsnap is that it
+doesn't provide a way to regularly do backups. If you want daily
+backups of a particular directory you've to write your own
+script that does something like:
+
+    tarsnap -c -f /files/important-`date +%Y-%m-%d` ~/files/important
+
+Even worse: You have to implement your own retention
+strategy. Fortunately, Michael Elsd&ouml;rfer created
+[tarsnapper](https://github.com/miracle2k/tarsnapper).
+
+Tarsnapper takes care of managing backup jobs and implements a
+[Grandfather-father-son](https://en.wikipedia.org/wiki/Backup_rotation_scheme#Grandfather-father-son)
+backup rotation scheme. The following example shows a tarsnapper
+config file (in YAML format) that will execute the "important" job and
+keeps daily, weekly and monthly backups.
+
+    deltas: 1d 7d 30d
+    target: /mymachine/$name-$date
+
+    jobs:
+      important:
+        source: ~/files/important
+
+## Automation
+
+I'm using [Anacron](http://anacron.sourceforge.net/) to regularly
+execute Tarsnapper. In contrast to Cron, Anacron is made for systems
+that don't run always, such as my laptop. When the backup is finished
+the results will be mailed to my email address together with some statistics:
+
+    tarsnap --print-stats --humanize-numbers
+
+I don't want to run an own mail server locally, so I'm using
+[msmtp](http://msmtp.sourceforge.net/) to send the emails using my
+mail provider.
+
+## Summary
+
+I think that Tarsnap provides a good backup solution. What I really
+like is it's speed. It does not start to compute a list of files that
+need to be send to the server and instead immediately sends blocks of
+data. It's de-duplication mechanism makes sure that only those blocks
+getting send that are not yet transferred. Currently I'm storing
+12 GB of compressed data and a run of Tarsnapper takes less than 3
+minutes.
+
+A bit disappointing is that it takes about 5 minutes to restore a
+single file in a large archive. In my opinion this is acceptable
+because most of the time I want to do backups and only restore files
+when something goes wrong.
+
+I'm sure that Tarsnap is not the best approach out there, but it works
+for me. In the end it does not matter how you do backups as long as
+you do them regularly. If you're not doing it don't wait for the next
+[World Backup Day](http://www.worldbackupday.com/en/) do something
+now.
