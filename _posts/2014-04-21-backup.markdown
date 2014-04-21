@@ -4,7 +4,7 @@ layout: post
 date: 2014-04-21
 ---
 
-I recently switched from doing local backups to online backups with
+I recently switched from local to online backups with
 [Tarsnap](https://www.tarsnap.com/). In this post I want to share
 what I think is great about Tarsnap and how I configured it.
 
