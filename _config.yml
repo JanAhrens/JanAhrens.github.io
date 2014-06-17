@@ -3,7 +3,7 @@ lsi: false
 pygments: true
 name: ~/blog
 url: http://blog.jan-ahrens.eu
-paginate: 5
+paginate: 10
 exclude: ['Gemfile', 'Gemfile.lock']
 include: ['.well-known']
 markdown: redcarpet
