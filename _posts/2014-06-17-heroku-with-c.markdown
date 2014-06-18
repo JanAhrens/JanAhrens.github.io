@@ -8,7 +8,7 @@ Whenever I want to know my external IP address, I use
 [ifconfig.me](http://ifconfig.me). It's a small service that returns
 your IP address along with some additional information. The only
 downside is that it's relatively slow. In this post I'll describe how
-I implemented a subset of ipconfig.me in C and deployed it to
+I implemented a subset of ifconfig.me in C and deployed it to
 [Heroku](https://www.heroku.com/).
 
 * [Is it possible?](#possible)
