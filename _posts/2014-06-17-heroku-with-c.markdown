@@ -9,8 +9,7 @@ Whenever I want to know my external IP address, I use
 your IP address along with some additional information. The only
 downside is that it's relatively slow. In this post I'll describe how
 I implemented a subset of ipconfig.me in C and deployed it to
-[Heroku](https://www.heroku.com/). TL;DR: Try
-[ipconfig.herokuapp.com](http://ipconfig.herokuapp.com/).
+[Heroku](https://www.heroku.com/).
 
 * [Is it possible?](#possible)
 * [How Heroku works](#heroku)
@@ -174,10 +173,10 @@ Luckily `ab` has a switch that produces HTML tables, so here are the hard number
 ### 100 requests in sequence
 
 <table class="table">
-<tr><th>&nbsp;</th> <th>min</th>   <th>avg</th>   <th>max</th></tr>
-<tr><th>Connect:</th><td>   48</td><td>   52</td><td>   69</td></tr>
-<tr><th>Processing:</th><td>   55</td><td>   58</td><td>   65</td></tr>
-<tr><th>Total:</th><td>  103</td><td>  110</td><td>  134</td></tr>
+  <tr><th>&nbsp;</th>      <th>min</th> <th>avg</th> <th>max</th></tr>
+  <tr><th>Connect:</th>    <td> 48</td> <td> 52</td> <td> 69</td></tr>
+  <tr><th>Processing:</th> <td> 55</td> <td> 58</td> <td> 65</td></tr>
+  <tr><th>Total:</th>      <td>103</td> <td>110</td> <td>134</td></tr>
 </table>
 
     ab -n 100 http://ipconfig.herokuapp.com/
@@ -186,10 +185,10 @@ Luckily `ab` has a switch that produces HTML tables, so here are the hard number
 ### 100 requests, 10 in parallel
 
 <table class="table">
-<tr><th>&nbsp;</th> <th>min</th>   <th>avg</th>   <th>max</th></tr>
-<tr><th>Connect:</th><td>   49</td><td>   54</td><td>   65</td></tr>
-<tr><th>Processing:</th><td>   54</td><td>   60</td><td>   63</td></tr>
-<tr><th>Total:</th><td>  103</td><td>  114</td><td>  128</td></tr>
+  <tr><th>&nbsp;</th>      <th>min</th> <th>avg</th> <th>max</th></tr>
+  <tr><th>Connect:</th>    <td> 49</td> <td> 54</td> <td> 65</td></tr>
+  <tr><th>Processing:</th> <td> 54</td> <td> 60</td> <td> 63</td></tr>
+  <tr><th>Total:</th>      <td>103</td> <td>114</td> <td>128</td></tr>
 </table>
 
     ab -c 10 -n 100 http://ipconfig.herokuapp.com/
@@ -197,10 +196,10 @@ Luckily `ab` has a switch that produces HTML tables, so here are the hard number
 ### 100 requests in parallel
 
 <table class="table">
-<tr><th>&nbsp;</th> <th>min</th>   <th>avg</th>   <th>max</th></tr>
-<tr><th>Connect:</th><td>   58</td><td>  142</td><td>  237</td></tr>
-<tr><th>Processing:</th><td>  186</td><td>  188</td><td>  156</td></tr>
-<tr><th>Total:</th><td>  244</td><td>  330</td><td>  393</td></tr>
+  <tr><th>&nbsp;</th>      <th>min</th> <th>avg</th> <th>max</th></tr>
+  <tr><th>Connect:</th>    <td> 58</td> <td>142</td> <td>237</td></tr>
+  <tr><th>Processing:</th> <td>186</td> <td>188</td> <td>156</td></tr>
+  <tr><th>Total:</th>      <td>244</td> <td>330</td> <td>393</td></tr>
 </table>
 
     ab -c 100 -n 100 http://ipconfig.herokuapp.com/
