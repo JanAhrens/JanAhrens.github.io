@@ -110,3 +110,10 @@ for me. In the end it does not matter how you do backups as long as
 you do them regularly. If you're not doing it don't wait for the next
 [World Backup Day](http://www.worldbackupday.com/en/) do something
 now.
+
+**Update (2014-11-24)**:
+In the meantime I went from mail to desktop notifications.
+I'm using [notify-send](http://manpages.ubuntu.com/manpages/lucid/man1/notify-send.1.html) for that,
+which integrates nicely with Ubuntu.
+You can view the [backup script](https://github.com/JanAhrens/dotfiles/blob/master/bin/backup) in my [dotfiles
+repository](https://github.com/JanAhrens/dotfiles).
