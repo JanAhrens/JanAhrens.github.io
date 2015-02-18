@@ -1,0 +1,39 @@
+---
+title: tmux - the terminal window manager
+layout: post
+date: 2015-02-18
+---
+
+A dark full-screen terminal window. That is what you see mostly on my
+screen. I've fallen in love with the terminal since I got to know
+"cmd.exe" on my parents Windows computer. At first it was it's
+strangeness that fascinated me. Luckily I found out that "cmd.exe" is
+not the best shell prompt and discovered Bash and Linux a few years
+after that.
+
+Nowadays I'm still using terminal windows to get stuff done. Until
+recently it really where windows. Many windows. My favorite shortcut
+on my Linux machine was "Ctrl + Alt + t" - start a new terminal. At work
+I'm using a Mac. My muscle memory contains key combinations to create
+terminal windows and switch between them on both Linux and Mac. It was
+okay. It never really bothered me. Then a colleague introduced me to
+"tmux" - the <strong>t</strong>erminal<strong> mu</strong>ltiple<strong>x</strong>er.
+
+The idea of tmux is really simple. Instead of having one terminal
+window with one shell prompt, why not have one terminal window with
+many shell prompts. What tmux basically does is it saves me from
+opening a lot of terminal windows. But wait, there's more!
+
+Sessions, windows and panes. That are the building blocks of tmux.
+When I started to learn about it I needed some time to get used to
+those words. Mapping the concepts of tmux to those of my
+beloved terminal programs iTerm and gnome-terminal helped me.
+
+![tmux terminal window analogy](/assets/tmux-terminal-analogy.png)
+
+You can think of tmux as the equivalent of your terminal program, like
+iTerm or gnome-terminal. A tab in your terminal program is what tmux
+calls a window. When you start another process of your terminal
+program, you would start a new session in tmux. When you split a tab
+of your terminal window into different parts, each of those parts is
+called a a pane in tmux (unfortunately you can't do that with gnome-terminal).
