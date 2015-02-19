@@ -33,14 +33,12 @@ groups of windows and use it for
 [remote pair programming](http://pivotallabs.com/how-we-use-tmux-for-remote-pair-programming/).
 Interested? Then let's get started with the vocabulary.
 
+### Vocabulary
+
 Sessions, windows and panes. That are the building blocks of tmux.
 When I started to learn about it I needed some time to get the
 meaning. What helped me was to map the tmux concepts to those of my
 beloved terminal programs iTerm and gnome-terminal.
-
-<p class="text-center">
-  <img src="/assets/tmux-terminal-analogy.png" alt="tmux terminal window analogy">
-</p>
 
 You can think of tmux as the equivalent of your terminal program, like
 iTerm or gnome-terminal. A tab in your terminal program is called
@@ -49,15 +47,21 @@ terminal program, you start a new session in tmux. Splitting one tab of
 your terminal window tabs into different parts is what tmux calls splitting
 a window into panes (you can't do that with gnome-terminal).
 
+<p class="text-center">
+  <img src="/assets/tmux-terminal-analogy.png" alt="tmux terminal window analogy">
+</p>
+
+### The prefix key
+
 The first thing my colleague recommended me to change was the "prefix
 key". It's the key combination that tmux intercepts to recognize its
 commands. By default the prefix key is
 [`Ctrl-b`](http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man1/tmux.1#x4b45592042494e44494e4753).
-This is also used in Emacs to
+This combination is also used in Emacs to
 [move one character backward](https://www.gnu.org/software/emacs/manual/html_node/emacs/Moving-Point.html)
 so I ended up
 [changing the prefix key](https://github.com/JanAhrens/dotfiles/blob/6cc0a7ad7e1292f2dfb77580cb4f72fb42fd8d52/.tmux.conf#L5-L7)
-`Ctrl-]`.
+to `Ctrl-]`.
 It's easy to type with an English keyboard layout and not bound in any
 of the programs I use. In most posts about tmux you'll see that people
 reference the prefix key as `prefix` instead of assuming that it's
@@ -69,6 +73,8 @@ along. Reading about tmux is not as much fun as reading about tmux and
 immediately trying it. Just open your regular terminal program,
 install tmux and start a new session with `tmux new`.
 
+### Windows
+
 Type `prefix c` to create a new window in tmux. At the bottom of the
 tmux window you see the "status line". An asterisks next to the window
 name shows the active window. It should currently be the second one,
@@ -78,6 +84,8 @@ type `prefix 0`. You can also used `prefix n` and `prefix p` to jump
 to the next and previous window. That enough with windows for now,
 let's focus on panes. Let's close the second window (`prefix 1`) by
 ending the shell process (`exit` or `Ctrl-d`).
+
+### Panes
 
 To split your current window in two horizontal panes type `prefix "`.
 You can move to the next pane with `prefix o`. A very cool feature is
