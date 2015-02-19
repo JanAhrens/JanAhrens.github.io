@@ -6,34 +6,82 @@ date: 2015-02-18
 
 A dark full-screen terminal window. That is what you see mostly on my
 screen. I've fallen in love with the terminal since I got to know
-"cmd.exe" on my parents Windows computer. At first it was it's
-strangeness that fascinated me. Luckily I found out that "cmd.exe" is
-not the best shell prompt and discovered Bash and Linux a few years
-after that.
+"cmd.exe" on my parents Windows computer. A few years later I was
+lucky enough to discover that Windows and "cmd.exe" isn't the most
+effective way to work and I started to learn about Linux and Bash.
 
 Nowadays I'm still using terminal windows to get stuff done. Until
 recently it really where windows. Many windows. My favorite shortcut
-on my Linux machine was "Ctrl + Alt + t" - start a new terminal. At work
+on my Linux machine was `Ctrl-Alt-t` - start a new terminal. At work
 I'm using a Mac. My muscle memory contains key combinations to create
-terminal windows and switch between them on both Linux and Mac. It was
-okay. It never really bothered me. Then a colleague introduced me to
+terminal windows and switch between them on both systems. It was
+okay. It never really bothered me - until a colleague introduced me to
 "tmux" - the <strong>t</strong>erminal<strong> mu</strong>ltiple<strong>x</strong>er.
 
-The idea of tmux is really simple. Instead of having one terminal
-window with one shell prompt, why not have one terminal window with
-many shell prompts. What tmux basically does is it saves me from
-opening a lot of terminal windows. But wait, there's more!
+<p class="text-center">
+  <img src="/assets/tmux.png" alt="tmux">
+</p>
+
+The idea of tmux is really simple. Instead of having multiple windows
+with one shell prompt, why not have a single terminal window with many
+shell prompts. tmux saves me from opening a lot of terminal
+windows. But wait, there's more!
+
+You can split windows (horizontally and vertically), scroll and search
+through the terminal output, copy-and-paste from inside tmux, manage
+groups of windows and use it for
+[remote pair programming](http://pivotallabs.com/how-we-use-tmux-for-remote-pair-programming/).
+Interested? Then let's get started with the vocabulary.
 
 Sessions, windows and panes. That are the building blocks of tmux.
-When I started to learn about it I needed some time to get used to
-those words. Mapping the concepts of tmux to those of my
-beloved terminal programs iTerm and gnome-terminal helped me.
+When I started to learn about it I needed some time to get the
+meaning. What helped me was to map the tmux concepts to those of my
+beloved terminal programs iTerm and gnome-terminal.
 
-![tmux terminal window analogy](/assets/tmux-terminal-analogy.png)
+<p class="text-center">
+  <img src="/assets/tmux-terminal-analogy.png" alt="tmux terminal window analogy">
+</p>
 
 You can think of tmux as the equivalent of your terminal program, like
-iTerm or gnome-terminal. A tab in your terminal program is what tmux
-calls a window. When you start another process of your terminal
-program, you would start a new session in tmux. When you split a tab
-of your terminal window into different parts, each of those parts is
-called a a pane in tmux (unfortunately you can't do that with gnome-terminal).
+iTerm or gnome-terminal. A tab in your terminal program is called
+window in tmux. When you would start another window inside your
+terminal program, you start a new session in tmux. Splitting one tab of
+your terminal window tabs into different parts is what tmux calls splitting
+a window into panes (you can't do that with gnome-terminal).
+
+The first thing my colleague recommended me to change was the "prefix
+key". It's the key combination that tmux intercepts to recognize its
+commands. By default the prefix key is
+[`Ctrl-b`](http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man1/tmux.1#x4b45592042494e44494e4753).
+This is also used in Emacs to
+[move one character backward](https://www.gnu.org/software/emacs/manual/html_node/emacs/Moving-Point.html)
+so I ended up
+[changing the prefix key](https://github.com/JanAhrens/dotfiles/blob/6cc0a7ad7e1292f2dfb77580cb4f72fb42fd8d52/.tmux.conf#L5-L7)
+`Ctrl-]`.
+It's easy to type with an English keyboard layout and not bound in any
+of the programs I use. In most posts about tmux you'll see that people
+reference the prefix key as `prefix` instead of assuming that it's
+`Ctrl-b`. I'll do the same and write `prefix c` instead of `Ctrl-b c`
+(default prefix key) or `Ctrl-] c` (my custom prefix key).
+
+If you haven't done already it's now time to start tmux and follow
+along. Reading about tmux is not as much fun as reading about tmux and
+immediately trying it. Just open your regular terminal program,
+install tmux and start a new session with `tmux new`.
+
+Type `prefix c` to create a new window in tmux. At the bottom of the
+tmux window you see the "status line". An asterisks next to the window
+name shows the active window. It should currently be the second one,
+because you created a new window. tmux starts to count its windows
+from 0 on. If you want to switch back to the first window, you have to
+type `prefix 0`. You can also used `prefix n` and `prefix p` to jump
+to the next and previous window. That enough with windows for now,
+let's focus on panes. Let's close the second window (`prefix 1`) by
+ending the shell process (`exit` or `Ctrl-d`).
+
+To split your current window in two horizontal panes type `prefix "`.
+You can move to the next pane with `prefix o`. A very cool feature is
+to directly jump to a pane by typing `prefix q` (you'll see numbers
+appearing in the panes) and then press the number of the pane you want
+to jump to (`prefix q 0` for example). That feature blew my mind when
+I found out about it.
