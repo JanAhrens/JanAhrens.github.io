@@ -10,7 +10,7 @@ excerpt: In the first post of my "reverse engineering mobile apps" series, I'm a
 Mobile apps are in demand - for several years now. Every business
 needs an app, even tiny ones. Sometimes I'm under the impression that
 building mobile apps became, what was in the early 2000s, building
-websites. "Hey, your business doesn't have an app, therefore it isn't
+websites. "Hey, your business doesn't have a website, therefore it isn't
 future proof. Here, let me build (and sell) you one." Replace the word
 "website" with "mobile app" and you have today's situation.
 
