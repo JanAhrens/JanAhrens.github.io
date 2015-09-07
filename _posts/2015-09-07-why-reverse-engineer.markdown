@@ -52,10 +52,13 @@ our data. If the app is Open Source Software (or even
 [Free Software](https://en.wikipedia.org/wiki/Free_and_open-source_software)),
 we can have a look at its source code. Unfortunately, it's not that
 easy. How do you know that the source code was used to build the
-binary, you downloaded from the app store? Reproducible builds could
-help, but providing them isn't a trivial task. Debian is working hard
-on providing them
-[for all of their packages](https://wiki.debian.org/ReproducibleBuilds).
+binary, you downloaded from the app store?
+[Reproducible builds](https://wiki.debian.org/ReproducibleBuilds/About)
+could help, but providing them isn't a trivial task. Debian is working
+hard to make
+[every binary package reproducible](https://reproducible.debian.net/reproducible.html),
+but they're still not there, yet. I'm not aware that there's a similar
+project for mobile apps.
 
 The source code of most commercial apps isn't available anyway. In
 those cases it's good to have a closer look at the app's behavior from
