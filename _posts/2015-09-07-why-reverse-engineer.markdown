@@ -2,7 +2,7 @@
 title: Why reverse engineer mobile apps?
 layout: post
 date: 2015-09-07
-excerpt: In the first post of my "reverse engineering mobile apps" series, I'm arguing why you should learn how to reverse engineer apps.
+excerpt: In the first post of my &quot;reverse engineering mobile apps&quot; series, I'm arguing why you should learn how to reverse engineer apps.
 ---
 
 *This post is part of a series on reverse engineering mobile apps.*
