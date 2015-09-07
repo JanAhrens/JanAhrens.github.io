@@ -1,18 +1,18 @@
 ---
 title: Why reverse engineer mobile apps?
 layout: post
-date: 2015-09-06
-draft: true
+date: 2015-09-07
+excerpt: In the first post of my "reverse engineering mobile apps" series, I'm arguing why you should learn how to reverse engineer apps.
 ---
 
 *This post is part of a series on reverse engineering mobile apps.*
 
 Mobile apps are in demand - for several years now. Every business
-needs a mobile app, even tiny ones. Sometimes I'm under the impression
-that building mobile apps became, what was in the early 2000s,
-building websites. "Hey, your business doesn't have an app, therefore
-it isn't future proof. Here, let me build (and sell) you one." Replace
-the word "website" with "mobile app" and you have today's situation.
+needs an app, even tiny ones. Sometimes I'm under the impression that
+building mobile apps became, what was in the early 2000s, building
+websites. "Hey, your business doesn't have an app, therefore it isn't
+future proof. Here, let me build (and sell) you one." Replace the word
+"website" with "mobile app" and you have today's situation.
 
 Nevertheless this post isn't to moan about the status quo. It's about
 knowing what's going on with your data. If you think about it, "mobile
@@ -65,4 +65,4 @@ with your data. The more people know about how to do this, the more
 pressure will be put on the app owners.
 
 In the next post of this series, I'll be looking at your options to
-find out what an app is doing with your data.
+find out what an app is doing.
