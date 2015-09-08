@@ -7,6 +7,11 @@ excerpt: In the first post of my &quot;reverse engineering mobile apps&quot; ser
 
 *This post is part of a series on reverse engineering mobile apps.*
 
+1. **Why reverse engineer mobile apps?**
+2. [Analyse app traffic with mitmproxy](/2015/09/22/traffic-analysis-with-mitmproxy.html)
+
+---
+
 Mobile apps are in demand - for several years now. Every business
 needs an app, even tiny ones. Sometimes I'm under the impression that
 building mobile apps became, what was in the early 2000s, building
@@ -67,5 +72,8 @@ awareness, make them fear bad press, and keep them from messing around
 with your data. The more people know about how to do this, the more
 pressure will be put on the app owners.
 
-In the next post of this series, I'll be looking at your options to
-find out what an app is doing.
+
+---
+
+*In the [next post](/2015/09/22/traffic-analysis-with-mitmproxy.html) of this series, I'll be looking at your options to
+find out what an app is doing.*
