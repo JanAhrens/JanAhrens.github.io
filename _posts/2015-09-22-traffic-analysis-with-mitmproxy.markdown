@@ -24,8 +24,6 @@ you will have a hard time using a regular sniffer like
 to see what traffic the app produces. I'm using
 [mitmproxy](https://mitmproxy.org/doc/mitmproxy.html) for this.
 
-[![](/assets/mitmproxy-small.png)](https://mitmproxy.org/index.html)
-
 After you [installed](https://mitmproxy.org/doc/install.html) and started mitmproxy on your computer, you need
 to configure your phone to send its traffic through your computer.
 
