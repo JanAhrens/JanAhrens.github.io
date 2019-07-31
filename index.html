@@ -5,7 +5,7 @@ layout: default
 {% capture current_year %}{{ site.time | date: "%Y" }}{% endcapture %}
 
 <ul class="posts">
-  {% for post in paginator.posts %}
+  {% for post in site.posts %}
   {% if post.draft == null or post.draft == false %}
     <li>
       {% capture year %}{{ post.date | date: "%Y" }}{% endcapture %}
