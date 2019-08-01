@@ -215,7 +215,6 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
-    redcarpet (3.5.0)
     rouge (2.2.1)
     ruby-enum (0.7.2)
       i18n
@@ -244,7 +243,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  redcarpet
 
 BUNDLED WITH
    1.13.7
