@@ -1,6 +1,5 @@
 ---
 title: Introducing Yesod quickstart
-layout: post
 date: 2013-09-17
 excerpt: How to setup an up-to-date Yesod and Haskell virtual machine
 ---

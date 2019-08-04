@@ -1,6 +1,5 @@
 ---
 title: Deploying Yesod with Haskell
-layout: post
 date: 2012-07-05
 excerpt: How to setup your Yesod project and machine to deploy to Heroku.
 ---

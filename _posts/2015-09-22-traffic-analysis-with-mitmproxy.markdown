@@ -1,6 +1,5 @@
 ---
 title: Analyse app traffic with mitmproxy
-layout: post
 date: 2015-09-22
 excerpt: In the second post of my &quot;reverse engineering mobile apps&quot; series, I give an introduction on how to analyse the traffic of apps.
 ---

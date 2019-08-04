@@ -1,6 +1,5 @@
 ---
 title: cd ~/blog
-layout: post
 date: 2013-09-10
 excerpt: This blog has now a layout
 ---

@@ -1,6 +1,5 @@
 ---
 title: cron is dead, long live launchd!
-layout: post
 date: 2017-01-13
 ---
 

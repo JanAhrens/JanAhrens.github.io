@@ -1,6 +1,5 @@
 ---
 title: FizzBuzz in Emacs
-layout: post
 date: 2013-10-20
 excerpt: I've been playing with GNU Emacs and implemented the FizzBuzz Kata. In this post you can read about my approach.
 ---

@@ -1,15 +1,66 @@
-safe: true
+name: "Jan Ahrens"
+title: "Selected Thoughts"
+url: https://blog.jan-ahrens.eu
+
+locale: "en-US"
+timezone: Europe/Berlin
+
+repository: "janahrens/janahrens.github.io"
+github: [metadata]
+
 future: true
-lsi: false
-name: ~/blog
-highlighter: rouge
-url: http://blog.jan-ahrens.eu
-exclude: ['Gemfile', 'Gemfile.lock']
-include: ['.well-known']
-markdown: kramdown
-redcarpet:
-  extensions:
-    - no_intra_emphasis
-    - autolink
-    - strikethrough
-    - fenced_code_blocks
+encoding: UTF-8
+kramdown:
+  input: GFM
+  hard_wrap: false
+jailed: false
+gfm_quirks: paragraph_end
+paginate: 5
+
+plugins:
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: dark
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: false
+      related: false
+
+author:
+  name: "Jan Ahrens"
+  avatar: "/assets/avatar.jpg"
+  bio: "Engineering Manager and Software Engineer living in Hamburg"
+
+  links:
+    - label: "LinkedIn"
+      url: "https://www.linkedin.com/in/62725"
+      icon: "fab fa-linkedin"
+    - label: "XING"
+      url: "https://www.xing.com/profile/Jan_Ahrens2"
+      icon: "fab fa-xing"
+    - label: "GitHub"
+      url: "https://www.github.com/janahrens"
+      icon: "fab fa-github"
+    - label: "+49 156 7856 2789"
+      url: "https://signal.org/download"
+      icon: "fas fa-lock"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

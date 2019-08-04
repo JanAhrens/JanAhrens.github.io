@@ -1,6 +1,5 @@
 ---
 title: JSON Schema talk
-layout: post
 date: 2014-08-27
 ---
 

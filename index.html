@@ -1,17 +1,6 @@
 ---
-layout: default
+layout: home
+pagination:
+  enabled: true
+author_profile: true
 ---
-
-{% capture current_year %}{{ site.time | date: "%Y" }}{% endcapture %}
-
-<ul class="posts">
-  {% for post in site.posts %}
-  {% if post.draft == null or post.draft == false %}
-    <li>
-      {% capture year %}{{ post.date | date: "%Y" }}{% endcapture %}
-      <h2 class="post-head text-center"><a href="{{ post.url}}">{{ post.title }}{% if year != current_year %} ({{ year }}) {% endif %}</a></h2>
-      <p> {{ post.excerpt }} <a href="{{ post.url }}">read more</a></p>
-    </li>
-  {% endif %}
-{% endfor %}
-</ul>

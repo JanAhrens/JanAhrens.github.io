@@ -1,6 +1,5 @@
 ---
 title: "Heroku with C"
-layout: post
 date: 2014-06-17
 ---
 

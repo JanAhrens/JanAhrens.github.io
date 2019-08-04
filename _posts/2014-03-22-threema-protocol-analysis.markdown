@@ -1,6 +1,5 @@
 ---
 title: Threema protocol analysis
-layout: post
 date: 2014-03-22
 excerpt: I analyzed the custom protocol used by the mobile messaging application Threema and wrote a paper to summarize my results.
 ---

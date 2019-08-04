@@ -1,6 +1,5 @@
 ---
 title: The German income tax algorithm
-layout: post
 date: 2015-12-13
 excerpt: Ever wondered how complicated the German tax system is? I wrote a Ruby implementation of the tax algorithm. In this post I describe what I learned along the way.
 ---
