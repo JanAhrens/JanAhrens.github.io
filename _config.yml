@@ -41,6 +41,8 @@ defaults:
       share: false
       related: false
 
+ words_per_minute: 160
+
 author:
   name: "Jan Ahrens"
   avatar: "/assets/avatar.jpg"
