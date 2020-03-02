@@ -16,7 +16,7 @@ Jupyter brings both worlds together:
   * GitHub will [render Jupyter notebooks](https://help.github.com/en/github/managing-files-in-a-repository/working-with-jupyter-notebook-files-on-github) as static HTML
   * You can include images, tables, and even interactive elements like maps
  
-![](/files/jupyter.png)
+[![](/files/jupyter.png)](https://github.com/JanAhrens/JanAhrens.github.io/blob/master/files/explore-apis.ipynb)
   
   
 ## Setting up
