@@ -1,5 +1,5 @@
 ---
-title: # Exploring APIs and data structures with Jupyter notebooks
+title: Exploring APIs and data structures with Jupyter notebooks
 date: 2020-03-02
 ---
 
