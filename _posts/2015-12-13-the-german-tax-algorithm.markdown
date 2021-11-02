@@ -43,7 +43,7 @@ They're publishing
 </p>
 
 Yup! You heared right. They're publishing a
-[thirty-something page document](https://www.bmf-steuerrechner.de/pruefdaten/pap2016.pdf)
+[thirty-something page document](https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2015-11-16-PAP-2016-anlage-2.pdf?__blob=publicationFile&v=3)
 that includes a list of input parameters, a list of output parameters
 and a flowchart.
 
@@ -62,7 +62,7 @@ algorithm in a way that it can be implemented in any programming
 language? Something like a meta language?
 
 Along with their flowchart document, they
-[published XML files](https://www.bmf-steuerrechner.de/pruefdaten/Lohnsteuer2016.xml)
+[published XML files](https://www.bmf-steuerrechner.de/javax.faces.resource/daten/xmls/Lohnsteuer2020.xml.xhtml)
 that should achieve exactly that (they call it "XML pseudocode"). In
 my opinion, they didn't quite succeed. Although, the file contains
 elements for abstract concepts, like branches, it still includes
