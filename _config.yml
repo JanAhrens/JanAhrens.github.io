@@ -46,7 +46,7 @@ words_per_minute: 160
 author:
   name: "Jan Ahrens"
   avatar: "/assets/avatar.jpg"
-  bio: "Engineering Manager and Software Engineer living in Hamburg"
+  bio: "Engineering Leader"
 
   links:
     - label: "LinkedIn"
@@ -58,9 +58,6 @@ author:
     - label: "GitHub"
       url: "https://www.github.com/janahrens"
       icon: "fab fa-github"
-    - label: "+49 156 7856 2789"
-      url: "https://signal.org/download"
-      icon: "fas fa-lock"
 
 exclude:
   - Gemfile
