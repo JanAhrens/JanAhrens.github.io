@@ -21,4 +21,4 @@ That's why I decided to use [Signal](https://signal.org) instead. It's an [open-
 
 When I migrated to Signal, I wanted to provide everyone with the opportunity to contact me. As it requires a phone number to register, I would have had to publish my private number (I wasn't willing to do that). Luckily, I found a well-written guide that explains how to [use Signal without giving out your phone number](https://theintercept.com/2017/09/28/signal-tutorial-second-phone-number/). In that guide there are a couple of ways listed on how you can obtain an alternative phone number. I ended up using [satellite](https://www.satellite.me/) which is a VoIP app that is only available in Germany. Even though satellite doesn't support text messages, I could still register the account because Signal has a phone call fallback for verification.
 
-I recommend that you give Signal a try and stop worrying about PGP. You can send me your feedback at [+49 156 7856 2789](https://signal.org/download).
+I recommend that you give Signal a try and stop worrying about PGP.
