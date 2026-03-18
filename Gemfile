@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'github-pages', group: :jekyll_plugins
-
-gem 'minimal-mistakes-jekyll'
+gem 'jekyll', '~> 4.3'
+gem 'minimal-mistakes-jekyll', '~> 4.28'
 
 group :jekyll_plugins do
   gem "jekyll-paginate"
@@ -11,4 +10,6 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jemoji"
   gem "jekyll-include-cache"
+  gem "jekyll-remote-theme"
+  gem "jekyll-github-metadata"
 end
